@@ -1,11 +1,11 @@
 // write a prgm to print pairs whose pair sum is 6
 
-a=[2,3,4,5,1];
+a=[2,3,4,5];
 arr=[];
 let target=6;
 let left=0;
-let isFound=false;
 let right=a.length-1;
+let isFound=false;
 a.sort((n1,n2)=>n1-n2);
 while(left<right)
 {

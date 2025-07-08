@@ -15,63 +15,36 @@ employee =[
 ]
 
 // print all employee name 
-for(let item of employee)
-{
-   console.log(item[1]);
-   
-}
+
+employee.forEach((item)=>console.log(item[1]));
 console.log('----------------');
 
 //print total numbers of employee
-let count=0;
-for(let item of employee)
-{
-    count++
-}
-console.log(`No of employees= ${count}`);
-
+console.log(`total number of employee is ${employee.length}`);
 console.log('----------------');
 
 //print developer employee details
 
-for(let item of employee)
-{
-    if(item[2]=='developer')
-    {
-        console.log(item);
-    }
-}
+employee.filter((item)=>item[2]=='developer').forEach((item)=>console.log(item));
 
 console.log('----------------');
 //print employee whose salary > 30000
 console.log("employee whose salary > 30000");
-for(let item of employee)
-{
-   
-    if(item[4]>30000)
-    {
-        console.log(item[1]);
-    }
-}
+
+employee.filter((item)=>item[4]>30000).forEach((item)=>console.log(item));
 
 console.log('----------------');
 
 // print details of employee Laisha
 
-console.log("details of employee Laisha");
-for(let item of employee)
-{
-   
-    if(item[1]=='Laisha')
-    {
-        console.log(item);
-    }
-}
+lai=employee.find((item)=>item[1]=='Laisha')
+console.log(lai);
 
 console.log('----------------');
 
 //sort employee based on their salary in descending orde
 
+console.log("Employees sorted by salary in descending order");
 console.log("Employees sorted by salary in descending order");
 employee.sort((a,b)=>b[4]-a[4]);
 
@@ -96,23 +69,13 @@ console.log('----------------');
 
 // print the employ name whose have the higest salary
 console.log("employee whose have highest salary");
-// let max=employee[0];
-// for(let item of employee)
-// {
-//    if(item[4]>max[4])
-//    {
-//         max=item;
-//    } 
-// }
-// for(let item of employee)
-// {
-//     if(item[4]==max[4])
-//     {
-//         console.log(item);
-        
-//     }
-// }
-highestsal=employee.sort((emp1,emp2)=>emp1-emp2)[0][1]
-console.log(highestsal);
+highsal=employee.reduce((n1,n2)=>n1[4]>n2[4]?n1:n2);
+console.log(highsal[1]);
+
+
+
+
+
+
 
 console.log('----------------');

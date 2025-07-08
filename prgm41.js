@@ -9,6 +9,7 @@ for (let i = 0; i < expense.length; i++) {
         lowest = expense[i];
     }
 }
+
 console.log(`lowest expense = ${lowest}`);
 
 
@@ -20,8 +21,8 @@ for (let i = 0; i < expense.length; i++) {
         highest = expense[i];
     }
 }
-console.log(`Highest expense = ${highest}`);
 
+console.log(`Highest expense = ${highest}`);
 
 // w.a.p to find the total expense
 
@@ -29,6 +30,7 @@ let total = 0;
 for (let i = 0; i < expense.length; i++) {
     total += expense[i]
 }
+
 console.log(`Total expense = ${total}`);
 
 console.log('----------------');

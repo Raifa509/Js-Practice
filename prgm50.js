@@ -11,3 +11,5 @@ console.log(even);
 
 findEven=a.find((i)=>i%2==0)
 console.log(findEven);
+
+// slice

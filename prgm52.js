@@ -73,9 +73,4 @@ highsal=employee.reduce((n1,n2)=>n1[4]>n2[4]?n1:n2);
 console.log(highsal[1]);
 
 
-
-
-
-
-
 console.log('----------------');

@@ -1,0 +1,9 @@
+x='hello'
+console.log(x);
+console.log(x.length);
+console.log(x[2]);
+console.log('----------------------');
+str='Raifa'
+console.log(str.startsWith('r')?'Yes':'No');
+console.log(str.endsWith('fa')?'Yes':'No');
+console.log(str.substring(2,4));

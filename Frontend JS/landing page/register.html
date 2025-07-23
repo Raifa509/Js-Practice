@@ -19,6 +19,10 @@
         rel="stylesheet">
          <!-- tailwind -->
      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+       <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         * {
             font-family: "Roboto", sans-serif;
@@ -27,7 +31,54 @@
 </head>
 
 <body>
-
+ <header
+        style="background-image: url(https://t4.ftcdn.net/jpg/02/99/68/07/240_F_299680759_cQ3nuFp2hip9YQUdUH0CTZMBxYHrXLrz.jpg); height: 50vh; width: 100%;background-repeat: no-repeat;background-size: cover;background-position: center;">
+        <nav class="navbar bg-transparent">
+            <div class="container-fluid">
+                <a class="navbar-brand text-light" href="#">
+                    <i class="fa-solid fa-house me-3"></i>
+                    Landing Page
+                </a>
+            </div>
+        </nav>
+    </header>
+    <div class="px-3">
+        <h4 class="mt-4">Welcome to Our <span class="text-primary">Website</span></h4>
+        <p class="mt-3 text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos animi aperiam error
+            perspiciatis quibusdam voluptas doloribus, non aspernatur, sapiente, beatae sint veniam. Nobis voluptate, ea
+            minima ab doloremque quam repudiandae!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis rem assumenda iure dignissimos quidem, vero,
+            nulla harum possimus accusamus error corrupti quaerat animi minima molestias beatae hic quo? Ullam,
+            eum?Nobis voluptate, ea minima ab doloremque quam repudiandae!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis rem assumenda iure dignissimos quidem, vero,
+            nulla harum possimus accusamus error corrupti quaerat animi minima molestias beatae hic quo? Ullam, eum?</p>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 flex justify-center items-center">
+                <img src="https://img.freepik.com/free-vector/mobile-login-concept-illustration_114360-83.jpg?semt=ais_items_boosted&w=740"
+                    alt="" class="w-75">
+            </div>
+            <div class="col-md-6 pt-20 !pl-10 ">
+                <form action=""
+                    class="p-5 rounded shadow w-[35rem] h-[21rem] bg-gradient-to-tr from-neutral-200 to-purple-950  ">
+                    <h4 class="text-center py-3 text-white">Register</h4>
+                    <div class="mb-3">
+                        <input id="regUser" type="text" placeholder="Username" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <input id="regPass" type="text" placeholder="Password" class="form-control">
+                    </div>
+                    <div class="flex justify-center items-center"> 
+                        <button
+                            class="btn btn-primary w-100" type="button" onclick="obj.register()">Register</button>
+                    </div>
+                 
+                     <span class="text-white">Already an User? <a href="./login.html">Login</a></span>
+                </form>
+            </div>
+        </div>
+    </div>
 </body>
 <script src="./logic.js"></script>
 

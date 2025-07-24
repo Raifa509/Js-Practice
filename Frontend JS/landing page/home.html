@@ -41,16 +41,16 @@
                         <span>Dashboard</span>
                     </a>
                 </div>
-                <div class="text-white border border-white px-3 py-1 rounded-md flex items-center gap-2">
+                <button class="text-white border border-white px-3 py-1 rounded-md flex items-center gap-2" onclick="logout()" type="button">
                     <i class="fa-solid fa-power-off text-white"></i>
                     <span>Logout</span>
-                </div>
+                </button>
             </div>
         </nav>
 
     </header>
     <div class="container">
-        <h3 class="text-center mt-5">Welcome <span class="text-red-500" id="userdisplay">$user</span></h3>
+        <h3 class="text-center mt-5">Welcome <span class="text-red-500" id="userdisplay"></span></h3>
         <p class="pt-3 text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, dignissimos! Minima
             officia molestias ipsam sequi ea consequuntur, deserunt, recusandae repudiandae obcaecati dolor aut nesciunt
             fugit quo? Repellat quia architecto accusantium?
@@ -68,8 +68,21 @@
         </p>
     </div>
 </body>
-<script src="./logic.js">
+<script>
+    const user=localStorage.getItem('user')
+    if(!user){
+        alert('please login')
+        window.location='login.html'
+    }
+    else{
+    userdisplay.innerHTML=user
 
+    }
+
+function logout(){
+    localStorage.removeItem('user')
+    window.location='login.html'
+}
 </script>
 
 

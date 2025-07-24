@@ -69,7 +69,3 @@ class Landing {
 const obj = new Landing()
 obj.getData()
 
-const user = localStorage.getItem("user");
-if (user) {
-    document.getElementById("userdisplay").textContent = user;
-}

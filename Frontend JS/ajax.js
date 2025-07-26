@@ -2,7 +2,7 @@
 
 // create an instance for the class
 const http=new XMLHttpRequest()
-// console.log(http.readyState);
+console.log(http.readyState);
 
 // establish connection
 //here we are taking the todo data from jsonplaceholder website - SO use 'GET'
@@ -13,7 +13,7 @@ http.open("GET",'https://jsonplaceholder.typicode.com/todos')
 http.send()
 
 // property inside the class- its value changes during the process
-// console.log(http.readyState);
+console.log(http.readyState);
 
 // its the eventlistener that detect the change of the ready state
 http.onreadystatechange=()=>{
